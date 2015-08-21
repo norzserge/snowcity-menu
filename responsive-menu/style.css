@@ -39,6 +39,8 @@ body{
 .header-mobile {
   background: #42A2DD;
   font: 0.9em "Open Sans", Helvetica, Arial, sans-serif;
+  display: table;
+  width: 100%;
 }
 
 .header-mobile:after {
@@ -46,7 +48,20 @@ body{
   display: table;
   clear: both;
 }
-
+.mobile-menu-wrap, .header-mobile__title, .auth-btn-wrap {
+  display: table-cell;
+}
+.header-mobile__title {
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.auth-btn-wrap {
+  vertical-align: middle;
+  padding: 1px 10px 0 0;
+  text-align: right;
+}
 .mobile-menu {
 padding:11px;
 color:#ffffff;
@@ -106,7 +121,6 @@ border-left:3px solid #67BFF5;}
 /* auth button */
 
 .auth-btn {
-  float: right;
   background-color: #3A83B0;
   color: #fff;
   font-weight: 600;
@@ -115,7 +129,6 @@ border-left:3px solid #67BFF5;}
   padding: 6px 7px;
   border-radius: 3px;
   cursor: pointer;
-  margin: 8px 10px 5px 0;
   -webkit-transition: all 0.1s ease-in-out 0s;
   -moz-transition: all 0.1s ease-in-out 0s;
   -o-transition: all 0.1s ease-in-out 0s;
